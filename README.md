@@ -1,4 +1,4 @@
-**Simple Messageboard using Node
+# Simple Messageboard using Node
 
 see live at https://ancient-springs-38319.herokuapp.com/
 
