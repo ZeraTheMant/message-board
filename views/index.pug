@@ -1,11 +1,16 @@
 extends layout
 
 block content
-	h1= title
+	a.btn.btn-primary(href='/new') New message
 
 	ul
 		each msg in messages
 			li
-				p #{msg.user}
-				p #{msg.text}
-				p #{msg.added}
+				h3.text-primary #[strong #{msg.text}]
+				hr
+				div.container
+					div.row
+						div(class='col-sm-4 no-padding')
+							p #{msg.user}
+						div(class='col-sm-8 no-padding')
+							p.text-sm-right #{msg.mdy_format(msg.added)}
